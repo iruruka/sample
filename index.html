@@ -3,39 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>私のホームページ</title>
-  <meta name="description" content="Redstarの公式サイト。ITコンサルティング、PC・サーバー納品、Web制作など。">
-  <!-- SEO: 構造化データなど必要に応じて追加 -->
+  <title>Redstar — ITコンサルティング & Web制作</title>
+  <meta name="description" content="Redstar公式サイト。ITコンサルティング、PC/サーバー納品、インフラ構築、Web制作などを提供します。">
+  <!-- Google Analytics / Tag Manager ここに挿入 -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Redstar公式サイト</h1>
-    <p>ITコンサルティング・PC納品・Web制作</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Redstar</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#updates">更新履歴</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>はじめに</h2>
-      <p>当サイトはRedstar公式サイトです。情報の無断転載はご遠慮ください。</p>
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2 class="hero-title">ビジネスのITパートナー</h2>
+      <p class="hero-subtitle">Redstarは企業の成長を支えるITソリューションを提供します。</p>
+      <a href="#services" class="btn btn-primary">サービスを見る</a>
+    </div>
+  </section>
+
+  <main class="site-main">
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>サービス</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>ITコンサルティング</h3>
+            <p>業務分析から最適なシステム設計までサポートします。</p>
+          </div>
+          <div class="card">
+            <h3>インフラ構築</h3>
+            <p>サーバー・ネットワークの導入から運用までトータル支援。</p>
+          </div>
+          <div class="card">
+            <h3>Web制作</h3>
+            <p>企業サイト・ECサイトなど高品質なWeb開発を行います。</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>プロフィール</h2>
-      <p>ITコンサルタントとして20年以上の経験があります。</p>
+    <section id="profile" class="section profile">
+      <div class="container">
+        <h2>プロフィール</h2>
+        <p>ITコンサルタントとして20年以上の経験を持ち、数多くのプロジェクトを成功に導いてきました。</p>
+      </div>
     </section>
 
-    <section>
-      <h2>更新履歴</h2>
-      <ul>
-        <li>2024-04-19: サイト更新</li>
-        <li>2024-04-14: サイト開設</li>
-      </ul>
+    <section id="updates" class="section updates">
+      <div class="container">
+        <h2>更新履歴</h2>
+        <ul class="updates-list">
+          <li><time datetime="2024-04-19">2024-04-19</time> サイトデザインをリニューアル</li>
+          <li><time datetime="2024-04-14">2024-04-14</time> サイト開設</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <p>ご相談・お見積りはお気軽にお問い合わせください。</p>
+        <a href="mailto:info@redstar.jp" class="btn btn-secondary">メールを送る</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Redstar All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Redstar. All Rights Reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <!-- スクリプト -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
